@@ -31,6 +31,9 @@ function populateHeader() {
   // Create the H1 element
   // Grab the company name from the JSON object and use it for the text node
   // Inject the complete H1 element into the DOM, inside the HEADER
+  const h1 = document.createElement('h1')
+  h1.textContent = jsonObj.companyName
+  header.appendChild(h1)
 }
 /* STEP 10b: Assemble the showTopFlavors() function */
 function showTopFlavors() {
