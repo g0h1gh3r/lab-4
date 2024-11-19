@@ -53,7 +53,7 @@ function showTopFlavors(jsonObj) {
     h2.textContent = topFlavors[i].name
     img.src = topFlavors[i].image
     img.alt = topFlavors[i].name
-    p1.textContent = `Price: $${topFlavors[i].price}`
+    p1.textContent = `Calories: ${topFlavors[i].calories}`
     p2.textContent = `Type: ${topFlavors[i].type}`
 
     // STEP 10g: Build a loop for the ingredients array in the JSON
