@@ -53,11 +53,17 @@ function showTopFlavors(jsonObj) {
     const p2 = document.createElement('p')
     const ul = document.createElement('ul')
     // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
+    // Add calorie warning for high-calorie items
+    const calorieLevel =
+      topFlavors[i].calories >= 400 ? 'high-calorie' : 'low-calorie'
+    article.classList.add(calorieLevel)
     h2.textContent = topFlavors[i].name
     img.src = topFlavors[i].image
     img.alt = topFlavors[i].name
-    p1.textContent = `Calories: ${topFlavors[i].calories}`
-    p2.textContent = `Type: ${topFlavors[i].type}`
+    p1.textContent = `Calories: ${topFlavors[i].calories} ${
+      calorieLevel === 'high-calorie' ? '⚠️' : '✓'
+    }`
+    p2.textContent = `Type: ${topFlavors[i].type.toUpperCase()}`
 
     // STEP 10g: Build a loop for the ingredients array in the JSON
     for (let j = 0; j < topFlavors[i].ingredients.length; j++) {
