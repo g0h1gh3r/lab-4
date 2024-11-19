@@ -21,6 +21,27 @@
       "type": "sorbet",
       "ingredients": ["peach purée", "mango chunks", "clover honey"],
       "image": "./images/peach-mango.svg"
+    },
+    {
+      "name": "Extra Special 1",
+      "calories": 450,
+      "type": "ice cream",
+      "ingredients": ["cream", "sugar", "special sauce 1"],
+      "image": "./images/ice-cream-xtra1.svg"
+    },
+    {
+      "name": "Extra Special 2",
+      "calories": 430,
+      "type": "ice cream",
+      "ingredients": ["cream", "sugar", "special sauce 2"],
+      "image": "./images/ice-cream-xtra2.svg"
+    },
+    {
+      "name": "Strawberry Delight",
+      "calories": 300,
+      "type": "sorbet",
+      "ingredients": ["fresh strawberries", "sprinkles", "vanilla"],
+      "image": "./images/strawberry-sprinkle.svg"
     }
   ]
 }
